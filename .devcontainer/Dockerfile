@@ -16,6 +16,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 RUN npm install -g @angular/cli
 RUN npm install -g nx
 RUN apt-get update && apt-get install -y git
+RUN apt-get update && appt-get install -y git 
+
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
